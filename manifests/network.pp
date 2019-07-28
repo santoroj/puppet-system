@@ -1,3 +1,9 @@
+# A description of what this class does
+#
+# @summary A short summary of the purpose of this class
+#
+# @example
+#   include system::network
 class system::network (
   Optional[String[1]] $hostname          = undef,
   Optional[Stdlib::IP::Address] $gateway = undef,

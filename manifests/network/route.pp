@@ -1,3 +1,10 @@
+# A description of what this defined type does
+#
+# @summary A short summary of the purpose of this defined type.
+#
+# @example
+#   system::network::route { 'namevar': }
+#
 define system::network::route (
   String[1] $interface,
   Stdlib::IP::Address $via,

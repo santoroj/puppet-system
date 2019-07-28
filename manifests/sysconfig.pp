@@ -1,3 +1,10 @@
+# A description of what this class does
+#
+# @summary A short summary of the purpose of this class
+#
+# @example
+#   include system::sysconfig
+#
 class system::sysconfig (
   $config   = {},
   $sys_schedule = 'always',

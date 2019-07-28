@@ -1,3 +1,10 @@
+# A description of what this defined type does
+#
+# @summary A short summary of the purpose of this defined type.
+#
+# @example
+#   system::network::interface { 'namevar': }
+#
 define system::network::interface (
   $dhcp                                    = undef,
   Optional[Stdlib::MAC] $hwaddr            = undef,

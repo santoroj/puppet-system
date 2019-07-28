@@ -1,4 +1,10 @@
-class system::execs (
+# A description of what this class does
+#
+# @summary A short summary of the purpose of this class
+#
+# @example
+#   include system::execs
+class system::execs {
   $config   = undef,
   $sys_schedule = 'always',
 ) {

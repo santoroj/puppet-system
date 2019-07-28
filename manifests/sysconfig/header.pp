@@ -1,3 +1,10 @@
+# A description of what this defined type does
+#
+# @summary A short summary of the purpose of this defined type.
+#
+# @example
+#   system::sysconfig::header { 'namevar': }
+#
 define system::sysconfig::header {
   $file = $title
   exec { "sysconfig-${file}-empty":

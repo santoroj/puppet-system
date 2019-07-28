@@ -1,4 +1,10 @@
-class system::crontabs (
+# A description of what this class does
+#
+# @summary A short summary of the purpose of this class
+#
+# @example
+#   include system::crontab
+class system::crontab {
   $config   = undef,
   $sys_schedule = 'always',
 ) {

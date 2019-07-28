@@ -1,4 +1,12 @@
+# A description of what this class does
+#
+# @summary A short summary of the purpose of this class
 # Based on http://serverfault.com/questions/127460/how-do-i-install-a-yum-package-group-with-puppet
+#
+# @example
+#   include system::yumgroup
+#
+#
 define system::yumgroup(
   $ensure   = 'present',
   $optional = false,
@@ -35,3 +43,4 @@ define system::yumgroup(
     }
   }
 }
+
