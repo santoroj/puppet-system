@@ -4,7 +4,7 @@
 #
 # @example
 #   include system::crontab
-class system::crontab {
+class system::crontab (
   $config   = undef,
   $sys_schedule = 'always',
 ) {

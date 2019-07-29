@@ -5,10 +5,10 @@
 # @example
 #   include system::augeas
 #
-class system::augeas {
+class system::augeas (
   $config   = undef,
   $sys_schedule = 'always',
-) {
+){
   $defaults = {
     schedule => $sys_schedule,
   }

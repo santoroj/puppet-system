@@ -5,7 +5,7 @@
 # @example
 #   include system::facts
 #
-class system::facts {
+class system::facts (
   $config   = undef,
   $cleanold = false,
   $sys_schedule = 'always',

@@ -5,20 +5,22 @@
 # @example
 #   include system::selbooleans
 #
-class system::schedules (
-  $config = undef,
+class system::selbooleans (
+  $config   = undef,
+  $sys_schedule = 'always',
 ) {
-  $defaults = {}
-  if $config {
-    create_resources(schedule, $config, $defaults)
-  }
-  else {
-    $hiera_config = hiera_hash('system::schedules', undef)
-    if $hiera_config {
-      create_resources(schedule, $hiera_config, $defaults)
+  if $::selinux == true {
+    $defaults = {
+      schedule => $sys_schedule,
     }
-  }
-  schedule { 'always':
-    range => '0 - 23',
+    if $config {
+      create_resources(selboolean, $config, $defaults)
+    }
+    else {
+      $hiera_config = hiera_hash('system::selbooleans', undef)
+      if $hiera_config {
+        create_resources(selboolean, $hiera_config, $defaults)
+      }
+    }
   }
 }

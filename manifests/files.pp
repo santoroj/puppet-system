@@ -4,7 +4,7 @@
 #
 # @example
 #   include system::files
-class system::files {
+class system::files (
   $config   = undef,
   $sys_schedule = 'always',
 ) {

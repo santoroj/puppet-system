@@ -4,7 +4,7 @@
 #
 # @example
 #   include system::execs
-class system::execs {
+class system::execs (
   $config   = undef,
   $sys_schedule = 'always',
 ) {
