@@ -10,9 +10,9 @@ describe 'system::facts', type: 'class' do
       {
         config: {
           'location' => {
-            'value'  => 'London'
-          }
-        }
+            'value'  => 'London',
+          },
+        },
       }
     end
 

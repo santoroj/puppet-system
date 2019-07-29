@@ -17,9 +17,9 @@ describe 'system::crontabs', type: 'class' do
             'command' => '/usr/sbin/logrotate',
             'user'    => 'root',
             'hour'    => '4',
-            'minute'  => '17'
-          }
-        }
+            'minute'  => '17',
+          },
+        },
       }
     end
 

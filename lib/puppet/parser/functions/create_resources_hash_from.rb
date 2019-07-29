@@ -132,11 +132,11 @@ with a loop of some description.
             raise(Puppet::ParseError, "create_resources_hash_from(): dynamic_parameter '#{param}' already exists in resource hash")
           end
           my_resource_hash[param] = value..gsub('%index%', index.to_s)
-          my_resource_hash[param] = format(value, [i])
+          my_resource_hash[param] = value % [i]
         end
       end
       key = formatted_string.gsub('%index%', index.to_s)
-      result[format(key, [i])] = my_resource_hash
+      result[key % [i]] = my_resource_hash
     end
 
     result
