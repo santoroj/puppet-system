@@ -22,12 +22,12 @@ class system::users (
     $type = '@user'
   }
   if $config {
-    system_create_resources($type, $config, $defaults)
+    create_resources($type, $config, $defaults)
   }
   else {
     $hiera_config = hiera_hash('system::users', undef)
     if $hiera_config {
-      system_create_resources($type, $hiera_config, $defaults)
+      create_resources($type, $hiera_config, $defaults)
     }
   }
 }
