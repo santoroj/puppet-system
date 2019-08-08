@@ -6,7 +6,7 @@
 #   include system::sysconfig::keyboard
 #
 class system::sysconfig::keyboard (
-  $config   = undef,
+  Hash $config   = undef,
 ) {
   if $config {
     $keyboard = $config

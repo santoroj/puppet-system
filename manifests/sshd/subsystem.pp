@@ -6,7 +6,7 @@
 #   include system::sshd::subsystem
 #
 class system::sshd::subsystem (
-  $config = undef
+  Hash $config = undef
 ) {
   if $config {
     include augeasproviders

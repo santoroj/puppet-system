@@ -6,7 +6,7 @@
 #   include system::sysconfig::selinux
 #
 class system::sysconfig::selinux (
-  $config   = undef,
+  Hash $config   = undef,
 ) {
   if $config {
     $selinux = $config

@@ -6,8 +6,8 @@
 #   include system::yumrepos
 #
 class system::yumrepos (
-  $config   = undef,
-  $sys_schedule = 'always',
+  Hash   $config       = undef,
+  String $sys_schedule = 'always',
 ) {
   $defaults = {
     enabled  => '1',

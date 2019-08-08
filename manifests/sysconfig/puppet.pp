@@ -6,7 +6,7 @@
 #   include system::sysconfig::puppet
 #
 class system::sysconfig::puppet (
-  $config   = undef,
+  Hash $config   = undef,
 ) {
   if $config {
     $puppet = $config

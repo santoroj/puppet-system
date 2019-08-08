@@ -6,7 +6,7 @@
 #   include system::sysconfig::clock
 #
 class system::sysconfig::clock (
-  $config   = undef,
+  Hash $config   = undef,
 ) {
   if $config {
     $clock = $config

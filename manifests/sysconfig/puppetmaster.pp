@@ -6,7 +6,7 @@
 #   include system::sysconfig::puppetmaster
 #
 class system::sysconfig::puppetmaster (
-  $config   = undef,
+  Hash $config   = undef,
 ) {
   if $config {
     $puppetmaster = $config

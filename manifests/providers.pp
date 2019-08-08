@@ -6,7 +6,7 @@
 #   include system::providers
 #
 class system::providers (
-  $config   = undef,
+  Hash $config   = undef,
 ) {
   if $config {
     $_config = $config

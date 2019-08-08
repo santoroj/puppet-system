@@ -6,8 +6,8 @@
 #   include system::limits
 #
 class system::limits (
-  $config   = undef,
-  $sys_schedule = 'always',
+  Hash   $config       = undef,
+  String $sys_schedule = 'always',
 ) {
   if $config {
     include limits

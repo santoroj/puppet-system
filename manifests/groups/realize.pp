@@ -7,7 +7,7 @@
 #
 class system::groups::realize (
   $groups   = undef,
-  $sys_schedule = 'always',
+  String $sys_schedule = 'always',
 ) {
   if $groups {
     realize(Group[$groups])

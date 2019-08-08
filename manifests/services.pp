@@ -6,8 +6,8 @@
 #   include system::services
 #
 class system::services (
-  $config   = undef,
-  $sys_schedule = 'always',
+  Hash   $config       = undef,
+  String $sys_schedule = 'always',
 ) {
   $defaults = {
     ensure     => 'running',

@@ -6,9 +6,9 @@
 #   include system::groups
 #
 class system::groups (
-  $config   = undef,
-  $sys_schedule = 'always',
-  $real     = false,
+  Hash    $config       = undef,
+  String  $sys_schedule = 'always',
+  Boolean $real         = false,
 ) {
   $defaults = {
     ensure   => 'present',

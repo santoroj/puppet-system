@@ -6,7 +6,7 @@
 #   include system::sysconfig::puppetdashboard
 #
 class system::sysconfig::puppetdashboard (
-  $config   = undef,
+  Hash $config   = undef,
 ) {
   if $config {
     $puppetdashboard = $config

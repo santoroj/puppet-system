@@ -6,8 +6,8 @@
 #   include system::users::realize
 #
 class system::users::realize (
-  $users    = undef,
-  $sys_schedule = 'always',
+  Hash   $users        = undef,
+  String $sys_schedule = 'always',
 ) {
   if $users {
     realize(User[$users])

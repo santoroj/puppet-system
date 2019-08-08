@@ -6,8 +6,8 @@
 #   include system::mounts
 #
 class system::mounts (
-  $config   = undef,
-  $sys_schedule = 'always',
+  Hash   $config       = undef,
+  String $sys_schedule = 'always',
 ) {
   $defaults = {
     atboot   => true,

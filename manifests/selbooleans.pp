@@ -6,8 +6,8 @@
 #   include system::selbooleans
 #
 class system::selbooleans (
-  $config   = undef,
-  $sys_schedule = 'always',
+  Hash $config         = undef,
+  String $sys_schedule = 'always',
 ) {
   if $::selinux == true {
     $defaults = {

@@ -2,6 +2,20 @@
 #
 # Facts specified here will override the values provided by rspec-puppet-facts.
 ---
-ipaddress: "172.16.254.254"
-is_pe: false
-macaddress: "AA:AA:AA:AA:AA:AA"
+system::users:
+  'keith':
+    ensure:    'present'
+    comment:   'Keith Burdis'
+    gid:       '500'
+    groups:    ['wheel']
+    home:      '/home/keith'
+    shell:     '/bin/bash'
+    uid:       '500'
+  'fred':
+    comment:   'Fred Bloggs'
+    uid:       '503'
+    gid:       '503'
+    home:      '/home/fred'
+    managehome: true
+system::users::realize:
+  - 'keith'

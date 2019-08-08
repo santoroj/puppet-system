@@ -5,8 +5,8 @@
 # @example
 #   include system::files
 class system::files (
-  $config   = undef,
-  $sys_schedule = 'always',
+  Hash   $config       = undef,
+  String $sys_schedule = 'always',
 ) {
   $defaults = {
     ensure   => 'present',

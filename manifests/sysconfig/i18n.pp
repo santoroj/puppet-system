@@ -6,7 +6,7 @@
 #   include system::sysconfig::i18n
 #
 class system::sysconfig::i18n (
-  $config   = undef,
+  Hash $config   = undef,
 ) {
   if $config {
     $i18n = $config

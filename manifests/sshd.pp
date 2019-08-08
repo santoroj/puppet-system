@@ -6,9 +6,9 @@
 #   include system::sshd
 #
 class system::sshd (
-  $config   = undef,
-  $sys_schedule = 'always',
-  $sync_host_keys = true
+  Hash    $config         = undef,
+  String  $sys_schedule   = 'always',
+  Boolean $sync_host_keys = true
 ) {
   $defaults = {
     schedule => $sys_schedule,

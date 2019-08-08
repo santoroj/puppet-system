@@ -6,8 +6,8 @@
 #   include system::templates
 #
 class system::templates (
-  $config   = undef,
-  $sys_schedule = 'always',
+  Hash   $config       = undef,
+  String $sys_schedule = 'always',
 ) {
   $defaults = {
     schedule => $sys_schedule,

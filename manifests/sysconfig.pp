@@ -6,8 +6,8 @@
 #   include system::sysconfig
 #
 class system::sysconfig (
-  $config   = {},
-  $sys_schedule = 'always',
+  Hash   $config       = {},
+  String $sys_schedule = 'always',
 ) {
   class { 'system::sysconfig::clock':
     config   => $config['clock'],

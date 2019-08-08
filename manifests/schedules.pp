@@ -6,7 +6,7 @@
 #   include system::schedules
 #
 class system::schedules (
-  $config = undef,
+  Hash $config = undef,
 ) {
   $defaults = {}
   if $config {
